@@ -35,4 +35,4 @@ list_content: \<list\> '["text1", "text2", "text3"]'
 ```
 (If error-status is 0, error-message is not outputted)
 
-### This is a semi-ready for deployment module by interns at PT Kazee Digital Indonesia for private company usage (PT. IAM Influencer Indonesia)
+### This is a ready for deployment module by interns at PT Kazee Digital Indonesia for private company usage (PT. IAM Influencer Indonesia)
