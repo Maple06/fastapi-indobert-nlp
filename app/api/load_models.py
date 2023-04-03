@@ -22,27 +22,10 @@ ARCHITECTURE = "indobenchmark/indobert-base-p1"
 EPOCHS = 10
 BATCH_SIZE = 16
 
-defaultEmptyResult = {"predicted_class": None, 
-                      "confidence": None, 
-                      "result": {'Lifestyle': 0.0, 
-                                 'Otomotif': 0.0, 
-                                 'Music': 0.0, 
-                                 'Beauty': 0.0, 
-                                 'Fashion': 0.0, 
-                                 'Traveling': 0.0, 
-                                 'Food': 0.0, 
-                                 'Finance': 0.0, 
-                                 'Parenting': 0.0, 
-                                 'Technology': 0.0, 
-                                 'Health': 0.0, 
-                                 'Gigs Worker': 0.0, 
-                                 'Homedecor': 0.0, 
-                                 'Gamers': 0.0, 
-                                 'Sport': 0.0, 
-                                 'Reviewer': 0.0, 
-                                 'Kpop': 0.0, 
-                                 'Politik': 0.0}, 
-                        "error-status": 0
+defaultEmptyResult = {
+                        "username": None,
+                        "prediction": None,
+                        "category": []
                     }
 
 class NLPIndoBert:

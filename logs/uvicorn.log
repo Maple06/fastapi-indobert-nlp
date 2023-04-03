@@ -1,1 +1,29 @@
 
+2023-04-03 14:23:32,778 - uvicorn.error - INFO - serve:75 - Started server process [11452]
+2023-04-03 14:23:32,782 - uvicorn.error - INFO - startup:47 - Waiting for application startup.
+2023-04-03 14:23:32,786 - uvicorn.error - INFO - startup:61 - Application startup complete.
+2023-04-03 14:23:39,166 - uvicorn.access - INFO - send:480 - 127.0.0.1:12329 - "POST /api/v1 HTTP/1.1" 307
+2023-04-03 14:23:41,738 - uvicorn.access - INFO - send:480 - 127.0.0.1:12329 - "POST /api/v1/ HTTP/1.1" 200
+2023-04-03 14:26:48,524 - uvicorn.error - INFO - serve:75 - Started server process [16300]
+2023-04-03 14:26:48,525 - uvicorn.error - INFO - startup:47 - Waiting for application startup.
+2023-04-03 14:26:48,527 - uvicorn.error - INFO - startup:61 - Application startup complete.
+2023-04-03 14:27:20,557 - uvicorn.access - INFO - send:480 - 127.0.0.1:12404 - "POST /api/v1 HTTP/1.1" 307
+2023-04-03 14:27:29,231 - uvicorn.access - INFO - send:480 - 127.0.0.1:12404 - "POST /api/v1/ HTTP/1.1" 200
+2023-04-03 14:29:10,523 - uvicorn.error - INFO - serve:75 - Started server process [11588]
+2023-04-03 14:29:10,524 - uvicorn.error - INFO - startup:47 - Waiting for application startup.
+2023-04-03 14:29:10,526 - uvicorn.error - INFO - startup:61 - Application startup complete.
+2023-04-03 14:29:55,953 - uvicorn.access - INFO - send:480 - 127.0.0.1:12448 - "POST /api/v1 HTTP/1.1" 307
+2023-04-03 14:30:03,310 - uvicorn.access - INFO - send:480 - 127.0.0.1:12448 - "POST /api/v1/ HTTP/1.1" 200
+2023-04-03 14:30:29,535 - uvicorn.access - INFO - send:480 - 127.0.0.1:12455 - "POST /api/v1 HTTP/1.1" 307
+2023-04-03 14:30:36,795 - uvicorn.access - INFO - send:480 - 127.0.0.1:12455 - "POST /api/v1/ HTTP/1.1" 200
+2023-04-03 14:31:43,603 - uvicorn.error - INFO - serve:75 - Started server process [13492]
+2023-04-03 14:31:43,605 - uvicorn.error - INFO - startup:47 - Waiting for application startup.
+2023-04-03 14:31:43,608 - uvicorn.error - INFO - startup:61 - Application startup complete.
+2023-04-03 14:31:48,998 - uvicorn.access - INFO - send:480 - 127.0.0.1:12475 - "POST /api/v1 HTTP/1.1" 307
+2023-04-03 14:31:57,605 - uvicorn.access - INFO - send:480 - 127.0.0.1:12475 - "POST /api/v1/ HTTP/1.1" 200
+2023-04-03 14:32:56,501 - uvicorn.access - INFO - send:480 - 127.0.0.1:12489 - "POST /api/v1 HTTP/1.1" 307
+2023-04-03 14:32:56,769 - uvicorn.access - INFO - send:480 - 127.0.0.1:12489 - "POST /api/v1/ HTTP/1.1" 200
+2023-04-03 14:36:56,722 - uvicorn.error - INFO - shutdown:255 - Shutting down
+2023-04-03 14:36:56,830 - uvicorn.error - INFO - shutdown:66 - Waiting for application shutdown.
+2023-04-03 14:36:56,832 - uvicorn.error - INFO - shutdown:77 - Application shutdown complete.
+2023-04-03 14:36:56,834 - uvicorn.error - INFO - serve:85 - Finished server process [13492]

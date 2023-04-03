@@ -59,11 +59,12 @@ class NLPService:
             encoded_review = tokenizer.encode_plus(
                                                 text,
                                                 max_length=50,
+                                                truncation=True,
                                                 add_special_tokens=True,
                                                 return_token_type_ids=False,
-                                                pad_to_max_length=True,
+                                                padding=True,
                                                 return_attention_mask=True,
-                                                return_tensors='pt',
+                                                return_tensors='pt'
                                                 )
 
             input_ids = encoded_review['input_ids'].to(device)
