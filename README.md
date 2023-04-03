@@ -1,3 +1,4 @@
+![Repo card](https://repository-images.githubusercontent.com/621719067/8b42c5ca-1a7a-4c19-98a6-5038c3701d4d)
 # Text Classification using IndoBERT with FastAPI Implementation.
 
 ### Usage
