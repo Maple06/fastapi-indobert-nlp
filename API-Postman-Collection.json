@@ -38,67 +38,67 @@
 				}
 			},
 			"response": {
-    "result": {
-        "username": "mlndr.ale",
-        "prediction": "Beauty",
-        "category": [
-                        {
-                            "Beauty": "73.97%"
-                        },
-                        {
-                            "Parenting": "22.27%"
-                        },
-                        {
-                            "Health": "1.34%"
-                        },
-                        {
-                            "Reviewer": "0.41%"
-                        },
-                        {
-                            "Fashion": "0.26%"
-                        },
-                        {
-                            "Lifestyle": "0.24%"
-                        },
-                        {
-                            "Food": "0.22%"
-                        },
-                        {
-                            "Sport": "0.21%"
-                        },
-                        {
-                            "Music": "0.15%"
-                        },
-                        {
-                            "Politik": "0.13%"
-                        },
-                        {
-                            "Gigs Worker": "0.12%"
-                        },
-                        {
-                            "Technology": "0.11%"
-                        },
-                        {
-                            "Traveling": "0.11%"
-                        },
-                        {
-                            "Finance": "0.10%"
-                        },
-                        {
-                            "Otomotif": "0.10%"
-                        },
-                        {
-                            "Homedecor": "0.10%"
-                        },
-                        {
-                            "Gamers": "0.10%"
-                        },
-                        {
-                            "Kpop": "0.09%"
-                        }
-                    ]
-                }
-            }
+	    		"result": {
+					"username": "mlndr.ale",
+					"prediction": "Beauty",
+					"category": [
+						{
+							"Beauty": "73.97%"
+						},
+						{
+							"Parenting": "22.27%"
+						},
+						{
+							"Health": "1.34%"
+						},
+						{
+							"Reviewer": "0.41%"
+						},
+						{
+							"Fashion": "0.26%"
+						},
+						{
+							"Lifestyle": "0.24%"
+						},
+						{
+							"Food": "0.22%"
+						},
+						{
+							"Sport": "0.21%"
+						},
+						{
+							"Music": "0.15%"
+						},
+						{
+							"Politik": "0.13%"
+						},
+						{
+							"Gigs Worker": "0.12%"
+						},
+						{
+							"Technology": "0.11%"
+						},
+						{
+							"Traveling": "0.11%"
+						},
+						{
+							"Finance": "0.10%"
+						},
+						{
+							"Otomotif": "0.10%"
+						},
+						{
+							"Homedecor": "0.10%"
+						},
+						{
+							"Gamers": "0.10%"
+						},
+						{
+							"Kpop": "0.09%"
+						}
+					]
+				}
+		    }
 		}
 	]
 }
