@@ -6,10 +6,12 @@
     - When container is running successfully, it will take several minutes until localhost is available and usable. Just wait until FastAPI shows "Application startup complete" in the logs.
 
 - Native <br>
-`uvicorn main:app --host 0.0.0.0 --port 2233`
-    - This runs the app on localhost port 2233
+`uvicorn main:app --host 0.0.0.0 --port 2323`
+    - This runs the app on localhost port 2323
 
-Send a post request to the api route "/api/v1" (localhost:2233/api/v1) that includes 2 body requests, "username" which is a string and "list_content" which is the texts list.
+Send a post request to the api route "/api/v1" (localhost:2323/api/v1) that includes 2 body requests, "username" which is a string and "list_content" which is the texts list.
+
+#### Usage in postman: [Postman Collection](API-Postman-Collection.json)
 
 ### Input
 username: \<str\> <br>
@@ -20,9 +22,9 @@ list_content: \<list\> '["text1", "text2", "text3"]'
 {'result': {
     'username': 'JohnDoe123',
     'category' : [
-        {'Parenting' : 20%},
-        {'Gigs Worker' : 34%},
-        {'Health': 50%},
+        {'Parenting' : 50.05%},
+        {'Gigs Worker' : 23.3%},
+        {'Health': 10.25%},
         {'Sport': ...},
         {'Lifestyle': ...},
         ...

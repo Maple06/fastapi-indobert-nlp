@@ -72,13 +72,14 @@ class NLPService:
             output = model(input_ids, attention_mask)
             logits = output[0]
             probabilities = F.softmax(logits, dim=1)
-            _, prediction = torch.max(logits, dim=1)
 
             for i, category in enumerate(CATEGORY_LIST):
                 updatedProba = result[category] + float(f"{probabilities[0][i].item()*100:.2f}")
                 result.update({category: updatedProba})
 
         resultList = []
+
+        result = dict(sorted(result.items(), key=lambda item: item[1], reverse=True))
 
         for i in result:
             score = result[i] / len(texts)
@@ -87,6 +88,7 @@ class NLPService:
         output = {
             'result': {
                 'username': username,
+                'prediction': list(resultList[0].keys())[0],
                 'category': resultList
             }
         }

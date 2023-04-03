@@ -19,3 +19,226 @@
 2023-03-31 15:35:21,054 - app - INFO - initalTrain:56 - API Started. Training dataset...
 2023-03-31 15:35:21,186 - app - INFO - initalTrain:86 - Tokenizing and encoding sequences
 2023-03-31 15:35:39,352 - app - INFO - train_epoch:189 - Training epoch 1
+2023-04-03 07:40:35,541 - app - INFO - initalTrain:56 - API Started. Training dataset...
+2023-04-03 07:40:35,619 - app - INFO - initalTrain:86 - Tokenizing and encoding sequences
+2023-04-03 07:40:43,239 - app - INFO - train_epoch:189 - Training epoch 1
+2023-04-03 07:41:56,416 - app - INFO - initalTrain:56 - API Started. Training dataset...
+2023-04-03 07:41:56,469 - app - INFO - initalTrain:86 - Tokenizing and encoding sequences
+2023-04-03 07:42:03,408 - app - INFO - train_epoch:189 - Training epoch 1
+2023-04-03 07:42:33,322 - app - INFO - initalTrain:56 - API Started. Training dataset...
+2023-04-03 07:42:33,379 - app - INFO - initalTrain:86 - Tokenizing and encoding sequences
+2023-04-03 07:42:40,159 - app - INFO - train_epoch:189 - Training epoch 1
+2023-04-03 07:42:56,634 - app - INFO - initalTrain:56 - API Started. Training dataset...
+2023-04-03 07:42:56,700 - app - INFO - initalTrain:86 - Tokenizing and encoding sequences
+2023-04-03 07:43:03,502 - app - INFO - train_epoch:189 - Training epoch 1
+2023-04-03 07:44:44,614 - app - INFO - evaluate_epoch:252 - Evaluating epoch 1
+2023-04-03 07:44:51,121 - app - INFO - initalTrain:178 - 
+Training epoch 0 success. 
+Train acc: 0.657 
+Train loss: 1.240 
+Validation acc: 0.765 
+Validation loss: 0.860
+2023-04-03 07:44:51,134 - app - INFO - train_epoch:189 - Training epoch 2
+2023-04-03 07:46:30,246 - app - INFO - evaluate_epoch:252 - Evaluating epoch 2
+2023-04-03 07:46:37,446 - app - INFO - initalTrain:178 - 
+Training epoch 1 success. 
+Train acc: 0.830 
+Train loss: 0.627 
+Validation acc: 0.802 
+Validation loss: 0.720
+2023-04-03 07:46:37,448 - app - INFO - train_epoch:189 - Training epoch 3
+2023-04-03 07:48:18,973 - app - INFO - evaluate_epoch:252 - Evaluating epoch 3
+2023-04-03 07:48:24,625 - app - INFO - initalTrain:178 - 
+Training epoch 2 success. 
+Train acc: 0.888 
+Train loss: 0.400 
+Validation acc: 0.810 
+Validation loss: 0.737
+2023-04-03 07:48:24,627 - app - INFO - train_epoch:189 - Training epoch 4
+2023-04-03 07:50:04,980 - app - INFO - evaluate_epoch:252 - Evaluating epoch 4
+2023-04-03 07:50:10,639 - app - INFO - initalTrain:178 - 
+Training epoch 3 success. 
+Train acc: 0.926 
+Train loss: 0.267 
+Validation acc: 0.811 
+Validation loss: 0.818
+2023-04-03 07:50:10,641 - app - INFO - train_epoch:189 - Training epoch 5
+2023-04-03 07:51:51,435 - app - INFO - evaluate_epoch:252 - Evaluating epoch 5
+2023-04-03 07:51:57,136 - app - INFO - initalTrain:178 - 
+Training epoch 4 success. 
+Train acc: 0.947 
+Train loss: 0.184 
+Validation acc: 0.808 
+Validation loss: 0.902
+2023-04-03 07:51:57,138 - app - INFO - train_epoch:189 - Training epoch 6
+2023-04-03 07:53:37,975 - app - INFO - evaluate_epoch:252 - Evaluating epoch 6
+2023-04-03 07:53:43,659 - app - INFO - initalTrain:178 - 
+Training epoch 5 success. 
+Train acc: 0.963 
+Train loss: 0.131 
+Validation acc: 0.805 
+Validation loss: 0.949
+2023-04-03 07:53:43,661 - app - INFO - train_epoch:189 - Training epoch 7
+2023-04-03 07:55:24,208 - app - INFO - evaluate_epoch:252 - Evaluating epoch 7
+2023-04-03 07:55:29,894 - app - INFO - initalTrain:178 - 
+Training epoch 6 success. 
+Train acc: 0.972 
+Train loss: 0.095 
+Validation acc: 0.805 
+Validation loss: 1.017
+2023-04-03 07:55:29,895 - app - INFO - train_epoch:189 - Training epoch 8
+2023-04-03 07:57:10,338 - app - INFO - evaluate_epoch:252 - Evaluating epoch 8
+2023-04-03 07:57:16,016 - app - INFO - initalTrain:178 - 
+Training epoch 7 success. 
+Train acc: 0.974 
+Train loss: 0.086 
+Validation acc: 0.813 
+Validation loss: 1.020
+2023-04-03 07:57:16,018 - app - INFO - train_epoch:189 - Training epoch 9
+2023-04-03 07:58:57,185 - app - INFO - evaluate_epoch:252 - Evaluating epoch 9
+2023-04-03 07:59:02,928 - app - INFO - initalTrain:178 - 
+Training epoch 8 success. 
+Train acc: 0.977 
+Train loss: 0.071 
+Validation acc: 0.805 
+Validation loss: 1.106
+2023-04-03 07:59:02,930 - app - INFO - train_epoch:189 - Training epoch 10
+2023-04-03 08:00:43,980 - app - INFO - evaluate_epoch:252 - Evaluating epoch 10
+2023-04-03 08:00:49,694 - app - INFO - initalTrain:178 - 
+Training epoch 9 success. 
+Train acc: 0.979 
+Train loss: 0.064 
+Validation acc: 0.811 
+Validation loss: 1.153
+2023-04-03 08:07:11,535 - app - INFO - predict:22 - API request received. Predicting i with 1 texts
+2023-04-03 08:16:10,755 - app - INFO - initalTrain:56 - API Started. Training dataset...
+2023-04-03 08:16:10,810 - app - INFO - initalTrain:86 - Tokenizing and encoding sequences
+2023-04-03 08:16:19,613 - app - INFO - train_epoch:189 - Training epoch 1
+2023-04-03 08:17:04,430 - app - INFO - initalTrain:56 - API Started. Training dataset...
+2023-04-03 08:17:04,486 - app - INFO - initalTrain:86 - Tokenizing and encoding sequences
+2023-04-03 08:17:12,249 - app - INFO - train_epoch:189 - Training epoch 1
+2023-04-03 08:17:37,251 - app - INFO - initalTrain:56 - API Started. Training dataset...
+2023-04-03 08:17:37,311 - app - INFO - initalTrain:86 - Tokenizing and encoding sequences
+2023-04-03 08:17:45,407 - app - INFO - train_epoch:189 - Training epoch 1
+2023-04-03 08:20:03,295 - app - INFO - initalTrain:56 - API Started. Training dataset...
+2023-04-03 08:20:03,361 - app - INFO - initalTrain:86 - Tokenizing and encoding sequences
+2023-04-03 08:20:11,421 - app - INFO - train_epoch:189 - Training epoch 1
+2023-04-03 08:21:54,702 - app - INFO - evaluate_epoch:252 - Evaluating epoch 1
+2023-04-03 08:22:01,471 - app - INFO - initalTrain:178 - 
+Training epoch 0 success. 
+Train acc: 0.658 
+Train loss: 1.251 
+Validation acc: 0.785 
+Validation loss: 0.827
+2023-04-03 08:22:01,472 - app - INFO - train_epoch:189 - Training epoch 2
+2023-04-03 08:28:29,755 - app - INFO - initalTrain:53 - API Started. Dataset exists.
+2023-04-03 08:30:40,622 - app - INFO - initalTrain:53 - API Started. Dataset exists.
+2023-04-03 08:35:00,141 - app - INFO - initalTrain:53 - API Started. Dataset exists.
+2023-04-03 08:36:52,831 - app - INFO - initalTrain:53 - API Started. Dataset exists.
+2023-04-03 08:38:27,970 - app - INFO - initalTrain:53 - API Started. Dataset exists.
+2023-04-03 08:39:08,433 - app - INFO - predict:22 - API request received. Predicting test123lol with 1 texts
+2023-04-03 08:39:49,449 - app - INFO - predict:22 - API request received. Predicting test123lol with 1 texts
+2023-04-03 08:40:45,765 - app - INFO - predict:22 - API request received. Predicting test123lol with 1 texts
+2023-04-03 08:41:08,759 - app - INFO - predict:22 - API request received. Predicting test123lol with 1 texts
+2023-04-03 08:41:28,364 - app - INFO - predict:22 - API request received. Predicting test123lol with 1 texts
+2023-04-03 08:41:35,944 - app - INFO - predict:22 - API request received. Predicting test123lol with 1 texts
+2023-04-03 08:42:02,604 - app - INFO - predict:22 - API request received. Predicting test123lol with 1 texts
+2023-04-03 08:42:35,712 - app - INFO - initalTrain:53 - API Started. Dataset exists.
+2023-04-03 08:50:48,537 - app - INFO - initalTrain:53 - API Started. Dataset exists.
+2023-04-03 08:52:07,162 - app - INFO - predict:22 - API request received. Predicting test123lol with 1 texts
+2023-04-03 08:53:43,805 - app - INFO - initalTrain:53 - API Started. Dataset exists.
+2023-04-03 08:53:43,865 - app - INFO - predict:22 - API request received. Predicting test123lol with 1 texts
+2023-04-03 08:54:29,320 - app - INFO - initalTrain:53 - API Started. Dataset exists.
+2023-04-03 08:55:38,627 - app - INFO - initalTrain:53 - API Started. Dataset exists.
+2023-04-03 08:56:25,773 - app - INFO - initalTrain:53 - API Started. Dataset exists.
+2023-04-03 08:56:28,863 - app - INFO - predict:22 - API request received. Predicting test123lol with 6 texts
+2023-04-03 08:57:09,192 - app - INFO - initalTrain:53 - API Started. Dataset exists.
+2023-04-03 08:58:19,031 - app - INFO - predict:22 - API request received. Predicting test123lol with 6 texts
+2023-04-03 08:59:48,379 - app - INFO - initalTrain:56 - API Started. Training dataset...
+2023-04-03 08:59:48,433 - app - INFO - initalTrain:86 - Tokenizing and encoding sequences
+2023-04-03 08:59:56,105 - app - INFO - train_epoch:189 - Training epoch 1
+2023-04-03 09:01:38,030 - app - INFO - evaluate_epoch:252 - Evaluating epoch 1
+2023-04-03 09:01:44,771 - app - INFO - initalTrain:178 - 
+Training epoch 0 success. 
+Train acc: 0.666 
+Train loss: 1.238 
+Validation acc: 0.782 
+Validation loss: 0.820
+2023-04-03 09:01:44,772 - app - INFO - train_epoch:189 - Training epoch 2
+2023-04-03 09:03:26,612 - app - INFO - evaluate_epoch:252 - Evaluating epoch 2
+2023-04-03 09:03:34,137 - app - INFO - initalTrain:178 - 
+Training epoch 1 success. 
+Train acc: 0.837 
+Train loss: 0.609 
+Validation acc: 0.796 
+Validation loss: 0.733
+2023-04-03 09:03:34,140 - app - INFO - train_epoch:189 - Training epoch 3
+2023-04-03 09:05:15,873 - app - INFO - evaluate_epoch:252 - Evaluating epoch 3
+2023-04-03 09:05:21,551 - app - INFO - initalTrain:178 - 
+Training epoch 2 success. 
+Train acc: 0.899 
+Train loss: 0.385 
+Validation acc: 0.807 
+Validation loss: 0.738
+2023-04-03 09:05:21,560 - app - INFO - train_epoch:189 - Training epoch 4
+2023-04-03 09:07:02,616 - app - INFO - evaluate_epoch:252 - Evaluating epoch 4
+2023-04-03 09:07:08,299 - app - INFO - initalTrain:178 - 
+Training epoch 3 success. 
+Train acc: 0.933 
+Train loss: 0.249 
+Validation acc: 0.805 
+Validation loss: 0.801
+2023-04-03 09:07:08,302 - app - INFO - train_epoch:189 - Training epoch 5
+2023-04-03 09:08:49,583 - app - INFO - evaluate_epoch:252 - Evaluating epoch 5
+2023-04-03 09:08:55,289 - app - INFO - initalTrain:178 - 
+Training epoch 4 success. 
+Train acc: 0.953 
+Train loss: 0.173 
+Validation acc: 0.803 
+Validation loss: 0.885
+2023-04-03 09:08:55,292 - app - INFO - train_epoch:189 - Training epoch 6
+2023-04-03 09:10:37,727 - app - INFO - evaluate_epoch:252 - Evaluating epoch 6
+2023-04-03 09:10:43,424 - app - INFO - initalTrain:178 - 
+Training epoch 5 success. 
+Train acc: 0.964 
+Train loss: 0.125 
+Validation acc: 0.809 
+Validation loss: 0.937
+2023-04-03 09:10:43,424 - app - INFO - train_epoch:189 - Training epoch 7
+2023-04-03 09:12:25,663 - app - INFO - evaluate_epoch:252 - Evaluating epoch 7
+2023-04-03 09:12:31,390 - app - INFO - initalTrain:178 - 
+Training epoch 6 success. 
+Train acc: 0.968 
+Train loss: 0.099 
+Validation acc: 0.800 
+Validation loss: 1.057
+2023-04-03 09:12:31,390 - app - INFO - train_epoch:189 - Training epoch 8
+2023-04-03 09:14:13,431 - app - INFO - evaluate_epoch:252 - Evaluating epoch 8
+2023-04-03 09:14:19,130 - app - INFO - initalTrain:178 - 
+Training epoch 7 success. 
+Train acc: 0.974 
+Train loss: 0.081 
+Validation acc: 0.804 
+Validation loss: 1.054
+2023-04-03 09:14:19,131 - app - INFO - train_epoch:189 - Training epoch 9
+2023-04-03 09:16:01,065 - app - INFO - evaluate_epoch:252 - Evaluating epoch 9
+2023-04-03 09:16:06,856 - app - INFO - initalTrain:178 - 
+Training epoch 8 success. 
+Train acc: 0.976 
+Train loss: 0.081 
+Validation acc: 0.809 
+Validation loss: 1.114
+2023-04-03 09:16:06,862 - app - INFO - train_epoch:189 - Training epoch 10
+2023-04-03 09:17:48,889 - app - INFO - evaluate_epoch:252 - Evaluating epoch 10
+2023-04-03 09:17:54,611 - app - INFO - initalTrain:178 - 
+Training epoch 9 success. 
+Train acc: 0.978 
+Train loss: 0.064 
+Validation acc: 0.805 
+Validation loss: 1.160
+2023-04-03 09:20:20,321 - app - INFO - initalTrain:54 - API Started. Dataset exists.
+2023-04-03 09:20:29,102 - app - INFO - predict:22 - API request received. Predicting test123lol with 6 texts
+2023-04-03 09:21:14,301 - app - INFO - initalTrain:54 - API Started. Dataset exists.
+2023-04-03 09:21:35,326 - app - INFO - predict:22 - API request received. Predicting test123lol with 6 texts
+2023-04-03 09:23:53,786 - app - INFO - initalTrain:54 - API Started. Dataset exists.
+2023-04-03 09:23:58,377 - app - INFO - predict:22 - API request received. Predicting test123lol with 6 texts

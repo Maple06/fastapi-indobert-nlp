@@ -1,6 +1,5 @@
 # API core module for all endpoints
-from fastapi import APIRouter, Form, Query
-from typing import List
+from fastapi import APIRouter, Form
 from .api_v1.endpoints.indobert_endpoint import NLPEndpoint
 
 routerv1 = APIRouter(
@@ -11,7 +10,7 @@ routerv1 = APIRouter(
 )
 
 @routerv1.post('/')
-async def NLPRouteMain(username: str = Form(...), list_content: List[str] = Query(...)):
+async def NLPRouteMain(username: str = Form(...), list_content: str = Form(...)):
     nlp = NLPEndpoint()
     result = nlp.get_prediction(username, list_content)
 

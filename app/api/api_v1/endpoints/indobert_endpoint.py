@@ -1,3 +1,5 @@
+import json
+
 from ....core.logging import logger
 from ..services.indobert_service import NLPService
 from ...load_models import defaultEmptyResult
@@ -10,6 +12,7 @@ class NLPEndpoint:
     def get_prediction(self, username, texts):
         try:
             nlpService = NLPService()
+            texts = json.loads(texts)
             result = nlpService.predict(username, texts)
             return result
 

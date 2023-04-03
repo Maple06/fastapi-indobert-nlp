@@ -6,9 +6,10 @@ import pandas as pd
 import torch
 import torch.nn as nn
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
+from torch.optim import AdamW
 from sklearn.model_selection import train_test_split
 from sklearn.utils.class_weight import compute_class_weight
-from transformers import BertTokenizer, BertForSequenceClassification, AdamW
+from transformers import BertTokenizer, BertForSequenceClassification
 
 import platform
 from ..core.logging import logger
@@ -19,7 +20,7 @@ CATEGORY_LIST = ['Lifestyle', 'Otomotif', 'Music', 'Beauty', 'Fashion', 'Traveli
 ARCHITECTURE = "indobenchmark/indobert-base-p1"
 
 EPOCHS = 10
-BATCH_SIZE = 32
+BATCH_SIZE = 16
 
 defaultEmptyResult = {"predicted_class": None, 
                       "confidence": None, 
@@ -49,7 +50,7 @@ class NLPIndoBert:
         pass
 
     def initalTrain(self):
-        if os.path.exists(f"{CWD}/ml-models/trained.bin"):
+        if os.path.exists(f"{CWD}/ml-models/pytorch_model.bin"):
             logger.info("API Started. Dataset exists.")
             return None
         
@@ -88,7 +89,7 @@ class NLPIndoBert:
         tokens_train = tokenizer.batch_encode_plus(
             train_text.tolist(),
             max_length = 100,
-            pad_to_max_length=True,
+            padding='longest',
             truncation=True
         )
 
@@ -96,7 +97,7 @@ class NLPIndoBert:
         tokens_val = tokenizer.batch_encode_plus(
             val_text.tolist(),
             max_length = 100,
-            pad_to_max_length=True,
+            padding='longest',
             truncation=True
         )
 
@@ -127,9 +128,9 @@ class NLPIndoBert:
         # Push the model to GPU, if exist
         self.model = self.model.to(self.device)
         if self.device == "cuda":
-            print("Using device:", torch.cuda.get_device_name(0), flush=True)
+            logger.info("Using device:", torch.cuda.get_device_name(0), flush=True)
         elif self.device == "cpu":
-            print("Using device:", platform.processor(), flush=True)
+            logger.info("Using device:", platform.processor(), flush=True)
 
         # Defining optimizer
         self.optimizer = AdamW(self.model.parameters(), lr = 1e-5)
@@ -151,14 +152,12 @@ class NLPIndoBert:
         best_valid_loss = float('inf')
 
         # Empty lists to store training and validation loss of each epoch
-        train_losses=[]
-        valid_losses=[]
+        train_losses = []
+        valid_losses = []
         train_accs = []
         valid_accs = []
 
         for epoch in range(EPOCHS):
-            print('\n Epoch {:} / {:}'.format(epoch + 1, EPOCHS))
-            
             # Train model
             train_loss, train_acc, _ = self.train_epoch(epoch)
             # Evaluate model
@@ -175,7 +174,7 @@ class NLPIndoBert:
             train_accs.append(train_acc)
             valid_accs.append(valid_acc)
             
-            logger.info(f"\nTraining epoch {epoch} success. \nTrain acc: {train_acc:.3f} \nTrain loss: {train_loss:.3f} \nValidation acc: {valid_acc:.3f} \nValidation loss: {valid_loss:.3f}")
+            logger.info(f"\nTraining epoch {epoch+1}/{EPOCHS} success. \nTrain acc: {train_acc:.3f} \nTrain loss: {train_loss:.3f} \nValidation acc: {valid_acc:.3f} \nValidation loss: {valid_loss:.3f}")
     
     def clean_sentence(sentence):
         sentence = str(sentence)
@@ -186,7 +185,7 @@ class NLPIndoBert:
         return sentence
 
     def train_epoch(self, epoch_num):
-        logger.info(f"Training epoch {epoch_num+1}")
+        logger.info(f"Training epoch {epoch_num+1}/{EPOCHS}")
         self.model.train()
 
         total_loss, total_accuracy = 0, 0
