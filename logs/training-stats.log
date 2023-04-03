@@ -1,10 +1,11 @@
-
-2023-04-03 14:23:32,765 - app - INFO - initalTrain:37 - API Started. Dataset exists.
-2023-04-03 14:23:39,179 - app - INFO - predict:22 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-03 14:26:48,516 - app - INFO - initalTrain:37 - API Started. Dataset exists.
-2023-04-03 14:27:20,569 - app - INFO - predict:22 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-03 14:29:10,514 - app - INFO - initalTrain:37 - API Started. Dataset exists.
-2023-04-03 14:29:55,963 - app - INFO - predict:22 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-03 14:30:29,543 - app - INFO - predict:22 - API request received. Predicting mlndr.ale with 5 texts
-2023-04-03 14:31:43,574 - app - INFO - initalTrain:37 - API Started. Dataset exists.
-2023-04-03 14:31:49,007 - app - INFO - predict:22 - API request received. Predicting mlndr.ale with 4 texts
+2023-04-03 14:54:20,498 - app - INFO - initalTrain:37 - API Started. Dataset exists.
+2023-04-03 14:58:35,892 - app - INFO - initalTrain:37 - API Started. Dataset exists.
+2023-04-03 15:00:14,193 - app - INFO - initalTrain:37 - API Started. Dataset exists.
+2023-04-03 15:02:45,935 - app - INFO - initalTrain:37 - API Started. Dataset exists.
+2023-04-03 16:02:12,832 - app - INFO - initalTrain:37 - API Started. Dataset exists.
+2023-04-03 16:03:47,988 - app - INFO - initalTrain:37 - API Started. Dataset exists.
+2023-04-03 16:05:06,044 - app - INFO - initalTrain:37 - API Started. Dataset exists.
+2023-04-03 16:06:07,831 - app - INFO - initalTrain:37 - API Started. Dataset exists.
+2023-04-03 16:08:03,602 - app - INFO - initalTrain:37 - API Started. Dataset exists.
+2023-04-03 16:11:33,788 - app - INFO - initalTrain:37 - API Started. Dataset exists.
+2023-04-03 16:12:22,911 - app - INFO - initalTrain:37 - API Started. Dataset exists.
