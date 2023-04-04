@@ -6,7 +6,7 @@ import torch.nn.functional as F
 import platform
 
 from ....core.logging import logger
-from ...load_models import trainDataset
+from ...load_models import trainDataset, defaultEmptyResult
 
 CWD = os.getcwd()
 
@@ -86,12 +86,11 @@ class NLPService:
             score = result[i] / len(texts)
             resultList.append({i: f"{score:.2f}%"})
 
-        output = {
-            'result': {
+        output = defaultEmptyResult.copy() 
+        output['result'].update({
                 'username': username,
                 'prediction': list(resultList[0].keys())[0],
                 'category': resultList
-            }
-        }
+            })
 
         return output

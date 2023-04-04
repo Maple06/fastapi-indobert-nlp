@@ -23,9 +23,11 @@ EPOCHS = 10
 BATCH_SIZE = 16
 
 defaultEmptyResult = {
-                        "username": None,
-                        "prediction": None,
-                        "category": []
+                        "result": {
+                            "username": None,
+                            "prediction": None,
+                            "category": []
+                        }
                     }
 
 class NLPIndoBert:
