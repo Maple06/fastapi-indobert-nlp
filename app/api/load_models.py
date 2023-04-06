@@ -23,9 +23,11 @@ EPOCHS = 10
 BATCH_SIZE = 16
 
 defaultEmptyResult = {
-                        "username": None,
-                        "prediction": None,
-                        "category": []
+                        "result": {
+                            "username": None,
+                            "prediction": None,
+                            "category": []
+                        }
                     }
 
 class NLPIndoBert:
@@ -110,10 +112,10 @@ class NLPIndoBert:
         
         # Push the model to GPU, if exist
         self.model = self.model.to(self.device)
-        if self.device == "cuda":
-            logger.info("Using device:", torch.cuda.get_device_name(0), flush=True)
-        elif self.device == "cpu":
-            logger.info("Using device:", platform.processor(), flush=True)
+        if torch.cuda.is_available():
+            logger.info(f"Using device: {torch.cuda.get_device_name(0)}")
+        else:
+            logger.info(f"Using device: {platform.processor()}")
 
         # Defining optimizer
         self.optimizer = AdamW(self.model.parameters(), lr = 1e-5)
@@ -282,5 +284,8 @@ class NLPIndoBert:
         return avg_loss, avg_accuracy, total_preds
     
 trainDataset = NLPIndoBert().initalTrain()
+<<<<<<< HEAD
 loadTokenizer = BertTokenizer.from_pretrained("indobenchmark/indobert-base-p1")
 loadModel = BertForSequenceClassification.from_pretrained(PATH)
+=======
+>>>>>>> 60e197452ccf242102f437a4e607d403bfe98050
