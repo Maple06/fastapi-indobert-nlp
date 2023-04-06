@@ -5,7 +5,7 @@ import torch.nn.functional as F
 import platform
 
 from ....core.logging import logger
-from ...load_models import trainDataset, loadTokenizer, loadModel
+from ...load_models import trainDataset, defaultEmptyResult, loadTokenizer, loadModel
 
 CWD = os.getcwd()
 
@@ -25,10 +25,10 @@ class NLPService:
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         
         loadModel.to(device)
-        if device == "cuda":
-            print("Using device:", torch.cuda.get_device_name(0), flush=True)
-        elif device == "cpu":
-            print("Using device:", platform.processor(), flush=True)
+        if torch.cuda.is_available():
+            logger.info(f"Using device: {torch.cuda.get_device_name(0)}")
+        else:
+            logger.info(f"Using device: {platform.processor()}")
 
         result = {
             'Lifestyle': 0.0, 
@@ -82,12 +82,11 @@ class NLPService:
             score = result[i] / len(texts)
             resultList.append({i: f"{score:.2f}%"})
 
-        output = {
-            'result': {
+        output = defaultEmptyResult.copy() 
+        output['result'].update({
                 'username': username,
                 'prediction': list(resultList[0].keys())[0],
                 'category': resultList
-            }
-        }
+            })
 
         return output
