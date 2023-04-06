@@ -18,6 +18,7 @@ from ..core.logging import logger
 CWD = os.getcwd()
 CATEGORY_LIST = ['Lifestyle', 'Otomotif', 'Music', 'Beauty', 'Fashion', 'Traveling', 'Food', 'Finance', 'Parenting', 'Technology', 'Health', 'Gigs Worker', 'Homedecor', 'Gamers', 'Sport', 'Reviewer', 'Kpop', 'Politik']
 ARCHITECTURE = "indobenchmark/indobert-base-p1"
+PATH = f"{CWD}/ml-models"
 
 EPOCHS = 10
 BATCH_SIZE = 16
@@ -284,13 +285,6 @@ class NLPIndoBert:
         return avg_loss, avg_accuracy, total_preds
     
 trainDataset = NLPIndoBert().initalTrain()
-<<<<<<< HEAD
+
 loadTokenizer = BertTokenizer.from_pretrained("indobenchmark/indobert-base-p1")
 loadModel = BertForSequenceClassification.from_pretrained(PATH)
-=======
-<<<<<<< HEAD
-loadTokenizer = BertTokenizer.from_pretrained("indobenchmark/indobert-base-p1")
-loadModel = BertForSequenceClassification.from_pretrained(PATH)
-=======
->>>>>>> 60e197452ccf242102f437a4e607d403bfe98050
->>>>>>> c1c291729d8162c7d1bf40798a53eea45af1f446

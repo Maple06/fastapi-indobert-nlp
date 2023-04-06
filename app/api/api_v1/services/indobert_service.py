@@ -9,7 +9,6 @@ from ...load_models import trainDataset, defaultEmptyResult, loadTokenizer, load
 
 CWD = os.getcwd()
 
-PATH = f"{CWD}/ml-models"
 CATEGORY_LIST = ['Lifestyle', 'Otomotif', 'Music', 'Beauty', 'Fashion', 'Traveling', 'Food', 'Finance', 'Parenting', 'Technology', 'Health', 'Gigs Worker', 'Homedecor', 'Gamers', 'Sport', 'Reviewer', 'Kpop', 'Politik']
 
 # Module specific business logic (will be use for endpoints)
