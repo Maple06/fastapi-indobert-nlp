@@ -112,12 +112,12 @@ class NLPIndoBert:
         
         # Push the model to GPU, if exist
         self.model = self.model.to(self.device)
-        if self.device == "cuda":
-            logger.info("Using device:", torch.cuda.get_device_name(0), flush=True)
-        elif self.device == "cpu":
-            logger.info("Using device:", platform.processor(), flush=True)
+        if torch.cuda.is_available():
+            logger.info(f"Using device: {torch.cuda.get_device_name(0)}")
+        else:
+            logger.info(f"Using device: {platform.processor()}")
 
-        # Defining optimizer
+        # Defining optimizerd
         self.optimizer = AdamW(self.model.parameters(), lr = 1e-5)
 
         # Computing class weights
