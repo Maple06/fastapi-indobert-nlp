@@ -1,12 +1,11 @@
 import os
-from transformers import BertTokenizer, BertForSequenceClassification
 import torch
 import torch.nn.functional as F
 
 import platform
 
 from ....core.logging import logger
-from ...load_models import trainDataset
+from ...load_models import trainDataset, loadTokenizer, loadModel
 
 CWD = os.getcwd()
 
@@ -20,15 +19,12 @@ class NLPService:
 
     def predict(self, username, texts):
         logger.info(f"API request received. Predicting {username} with {len(texts)} texts")
-
-        tokenizer = BertTokenizer.from_pretrained("indobenchmark/indobert-base-p1")
-        model = BertForSequenceClassification.from_pretrained(PATH)
         
-        model.eval()
+        loadModel.eval()
         
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         
-        model.to(device)
+        loadModel.to(device)
         if device == "cuda":
             print("Using device:", torch.cuda.get_device_name(0), flush=True)
         elif device == "cpu":
@@ -56,7 +52,7 @@ class NLPService:
             }
         
         for text in texts:
-            encoded_review = tokenizer.encode_plus(
+            encoded_review = loadTokenizer.encode_plus(
                                                 text,
                                                 max_length=50,
                                                 truncation=True,
@@ -70,7 +66,7 @@ class NLPService:
             input_ids = encoded_review['input_ids'].to(device)
             attention_mask = encoded_review['attention_mask'].to(device)
 
-            output = model(input_ids, attention_mask)
+            output = loadModel(input_ids, attention_mask)
             logits = output[0]
             probabilities = F.softmax(logits, dim=1)
 

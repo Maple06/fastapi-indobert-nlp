@@ -282,3 +282,5 @@ class NLPIndoBert:
         return avg_loss, avg_accuracy, total_preds
     
 trainDataset = NLPIndoBert().initalTrain()
+loadTokenizer = BertTokenizer.from_pretrained("indobenchmark/indobert-base-p1")
+loadModel = BertForSequenceClassification.from_pretrained(PATH)
