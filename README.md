@@ -1,3 +1,4 @@
+![Repo card](https://repository-images.githubusercontent.com/621719067/cca8448f-60dc-47f0-ac09-781ecb86dfb7)
 # Text Classification using IndoBERT with FastAPI Implementation.
 
 ### Usage
@@ -35,4 +36,4 @@ list_content: \<list\> '["text1", "text2", "text3"]'
 ```
 (If error-status is 0, error-message is not outputted)
 
-### This is a semi-ready for deployment module by interns at PT Kazee Digital Indonesia for private company usage (PT. IAM Influencer Indonesia)
+### This is a ready for deployment module by interns at PT Kazee Digital Indonesia for private company usage (PT. IAM Influencer Indonesia)

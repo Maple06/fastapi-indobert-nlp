@@ -6,7 +6,7 @@ import torch.nn.functional as F
 import platform
 
 from ....core.logging import logger
-from ...load_models import trainDataset
+from ...load_models import trainDataset, defaultEmptyResult
 
 CWD = os.getcwd()
 
@@ -59,11 +59,12 @@ class NLPService:
             encoded_review = tokenizer.encode_plus(
                                                 text,
                                                 max_length=50,
+                                                truncation=True,
                                                 add_special_tokens=True,
                                                 return_token_type_ids=False,
-                                                pad_to_max_length=True,
+                                                padding=True,
                                                 return_attention_mask=True,
-                                                return_tensors='pt',
+                                                return_tensors='pt'
                                                 )
 
             input_ids = encoded_review['input_ids'].to(device)
@@ -85,12 +86,11 @@ class NLPService:
             score = result[i] / len(texts)
             resultList.append({i: f"{score:.2f}%"})
 
-        output = {
-            'result': {
+        output = defaultEmptyResult.copy() 
+        output['result'].update({
                 'username': username,
                 'prediction': list(resultList[0].keys())[0],
                 'category': resultList
-            }
-        }
+            })
 
         return output
