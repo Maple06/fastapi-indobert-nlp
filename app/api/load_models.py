@@ -117,7 +117,7 @@ class NLPIndoBert:
         else:
             logger.info(f"Using device: {platform.processor()}")
 
-        # Defining optimizerd
+        # Defining optimizer
         self.optimizer = AdamW(self.model.parameters(), lr = 1e-5)
 
         # Computing class weights
