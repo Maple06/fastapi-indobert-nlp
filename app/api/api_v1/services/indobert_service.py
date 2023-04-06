@@ -29,10 +29,10 @@ class NLPService:
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         
         model.to(device)
-        if device == "cuda":
-            print("Using device:", torch.cuda.get_device_name(0), flush=True)
-        elif device == "cpu":
-            print("Using device:", platform.processor(), flush=True)
+        if torch.cuda.is_available():
+            logger.info(f"Using device: {torch.cuda.get_device_name(0)}")
+        else:
+            logger.info(f"Using device: {platform.processor()}")
 
         result = {
             'Lifestyle': 0.0, 
