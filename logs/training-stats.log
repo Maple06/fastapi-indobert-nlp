@@ -1,0 +1,88 @@
+2023-04-10 09:53:34,510 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-10 09:54:11,440 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
+2023-04-10 09:54:14,247 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-10 09:55:01,036 - app - INFO - initalTrain:43 - API Started. Training dataset...
+2023-04-10 09:55:01,124 - app - INFO - initalTrain:73 - Tokenizing and encoding sequences
+2023-04-10 09:55:09,462 - app - INFO - initalTrain:117 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-10 09:55:09,471 - app - INFO - train_epoch:174 - Training epoch 1/10
+2023-04-10 09:57:12,063 - app - INFO - evaluate_epoch:237 - Evaluating epoch 1
+2023-04-10 09:57:20,429 - app - INFO - initalTrain:163 - 
+Training epoch 1/10 success. 
+Train acc: 0.664 
+Train loss: 1.227 
+Validation acc: 0.775 
+Validation loss: 0.851
+2023-04-10 09:57:20,430 - app - INFO - train_epoch:174 - Training epoch 2/10
+2023-04-10 09:59:26,623 - app - INFO - evaluate_epoch:237 - Evaluating epoch 2
+2023-04-10 09:59:34,191 - app - INFO - initalTrain:163 - 
+Training epoch 2/10 success. 
+Train acc: 0.834 
+Train loss: 0.615 
+Validation acc: 0.802 
+Validation loss: 0.738
+2023-04-10 09:59:34,193 - app - INFO - train_epoch:174 - Training epoch 3/10
+2023-04-10 10:01:54,838 - app - INFO - evaluate_epoch:237 - Evaluating epoch 3
+2023-04-10 10:02:01,102 - app - INFO - initalTrain:163 - 
+Training epoch 3/10 success. 
+Train acc: 0.899 
+Train loss: 0.381 
+Validation acc: 0.797 
+Validation loss: 0.784
+2023-04-10 10:02:01,103 - app - INFO - train_epoch:174 - Training epoch 4/10
+2023-04-10 10:04:11,107 - app - INFO - evaluate_epoch:237 - Evaluating epoch 4
+2023-04-10 10:04:17,304 - app - INFO - initalTrain:163 - 
+Training epoch 4/10 success. 
+Train acc: 0.928 
+Train loss: 0.256 
+Validation acc: 0.799 
+Validation loss: 0.863
+2023-04-10 10:04:17,304 - app - INFO - train_epoch:174 - Training epoch 5/10
+2023-04-10 10:06:25,599 - app - INFO - evaluate_epoch:237 - Evaluating epoch 5
+2023-04-10 10:06:31,621 - app - INFO - initalTrain:163 - 
+Training epoch 5/10 success. 
+Train acc: 0.951 
+Train loss: 0.172 
+Validation acc: 0.805 
+Validation loss: 0.877
+2023-04-10 10:06:31,623 - app - INFO - train_epoch:174 - Training epoch 6/10
+2023-04-10 10:08:37,247 - app - INFO - evaluate_epoch:237 - Evaluating epoch 6
+2023-04-10 10:08:43,312 - app - INFO - initalTrain:163 - 
+Training epoch 6/10 success. 
+Train acc: 0.962 
+Train loss: 0.133 
+Validation acc: 0.805 
+Validation loss: 0.973
+2023-04-10 10:08:43,313 - app - INFO - train_epoch:174 - Training epoch 7/10
+2023-04-10 10:10:55,854 - app - INFO - evaluate_epoch:237 - Evaluating epoch 7
+2023-04-10 10:11:02,218 - app - INFO - initalTrain:163 - 
+Training epoch 7/10 success. 
+Train acc: 0.971 
+Train loss: 0.100 
+Validation acc: 0.811 
+Validation loss: 1.013
+2023-04-10 10:11:02,220 - app - INFO - train_epoch:174 - Training epoch 8/10
+2023-04-10 10:13:18,449 - app - INFO - evaluate_epoch:237 - Evaluating epoch 8
+2023-04-10 10:13:24,602 - app - INFO - initalTrain:163 - 
+Training epoch 8/10 success. 
+Train acc: 0.974 
+Train loss: 0.086 
+Validation acc: 0.808 
+Validation loss: 1.087
+2023-04-10 10:13:24,603 - app - INFO - train_epoch:174 - Training epoch 9/10
+2023-04-10 10:15:32,151 - app - INFO - evaluate_epoch:237 - Evaluating epoch 9
+2023-04-10 10:15:38,190 - app - INFO - initalTrain:163 - 
+Training epoch 9/10 success. 
+Train acc: 0.975 
+Train loss: 0.074 
+Validation acc: 0.802 
+Validation loss: 1.153
+2023-04-10 10:15:38,191 - app - INFO - train_epoch:174 - Training epoch 10/10
+2023-04-10 10:17:44,775 - app - INFO - evaluate_epoch:237 - Evaluating epoch 10
+2023-04-10 10:17:50,850 - app - INFO - initalTrain:163 - 
+Training epoch 10/10 success. 
+Train acc: 0.977 
+Train loss: 0.068 
+Validation acc: 0.814 
+Validation loss: 1.102
+2023-04-10 10:18:23,800 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
+2023-04-10 10:18:24,146 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU

@@ -1,0 +1,86 @@
+2023-04-06 12:52:23,967 - app - INFO - initalTrain:42 - API Started. Training dataset...
+2023-04-06 12:52:24,023 - app - INFO - initalTrain:72 - Tokenizing and encoding sequences
+2023-04-06 12:52:29,582 - app - INFO - initalTrain:116 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-06 12:52:29,587 - app - INFO - train_epoch:173 - Training epoch 1/10
+2023-04-06 12:54:17,710 - app - INFO - evaluate_epoch:236 - Evaluating epoch 1
+2023-04-06 12:54:24,187 - app - INFO - initalTrain:162 - 
+Training epoch 1/10 success. 
+Train acc: 0.681 
+Train loss: 1.193 
+Validation acc: 0.777 
+Validation loss: 0.830
+2023-04-06 12:54:24,189 - app - INFO - train_epoch:173 - Training epoch 2/10
+2023-04-06 12:56:10,870 - app - INFO - evaluate_epoch:236 - Evaluating epoch 2
+2023-04-06 12:56:17,513 - app - INFO - initalTrain:162 - 
+Training epoch 2/10 success. 
+Train acc: 0.836 
+Train loss: 0.608 
+Validation acc: 0.802 
+Validation loss: 0.724
+2023-04-06 12:56:17,513 - app - INFO - train_epoch:173 - Training epoch 3/10
+2023-04-06 12:58:04,657 - app - INFO - evaluate_epoch:236 - Evaluating epoch 3
+2023-04-06 12:58:10,352 - app - INFO - initalTrain:162 - 
+Training epoch 3/10 success. 
+Train acc: 0.896 
+Train loss: 0.382 
+Validation acc: 0.808 
+Validation loss: 0.774
+2023-04-06 12:58:10,354 - app - INFO - train_epoch:173 - Training epoch 4/10
+2023-04-06 12:59:57,578 - app - INFO - evaluate_epoch:236 - Evaluating epoch 4
+2023-04-06 13:00:03,289 - app - INFO - initalTrain:162 - 
+Training epoch 4/10 success. 
+Train acc: 0.930 
+Train loss: 0.252 
+Validation acc: 0.800 
+Validation loss: 0.801
+2023-04-06 13:00:03,290 - app - INFO - train_epoch:173 - Training epoch 5/10
+2023-04-06 13:01:50,559 - app - INFO - evaluate_epoch:236 - Evaluating epoch 5
+2023-04-06 13:01:56,275 - app - INFO - initalTrain:162 - 
+Training epoch 5/10 success. 
+Train acc: 0.949 
+Train loss: 0.177 
+Validation acc: 0.814 
+Validation loss: 0.870
+2023-04-06 13:01:56,276 - app - INFO - train_epoch:173 - Training epoch 6/10
+2023-04-06 13:03:43,717 - app - INFO - evaluate_epoch:236 - Evaluating epoch 6
+2023-04-06 13:03:49,437 - app - INFO - initalTrain:162 - 
+Training epoch 6/10 success. 
+Train acc: 0.964 
+Train loss: 0.123 
+Validation acc: 0.801 
+Validation loss: 0.956
+2023-04-06 13:03:49,438 - app - INFO - train_epoch:173 - Training epoch 7/10
+2023-04-06 13:05:36,912 - app - INFO - evaluate_epoch:236 - Evaluating epoch 7
+2023-04-06 13:05:42,636 - app - INFO - initalTrain:162 - 
+Training epoch 7/10 success. 
+Train acc: 0.971 
+Train loss: 0.099 
+Validation acc: 0.803 
+Validation loss: 1.028
+2023-04-06 13:05:42,637 - app - INFO - train_epoch:173 - Training epoch 8/10
+2023-04-06 13:07:30,075 - app - INFO - evaluate_epoch:236 - Evaluating epoch 8
+2023-04-06 13:07:35,795 - app - INFO - initalTrain:162 - 
+Training epoch 8/10 success. 
+Train acc: 0.974 
+Train loss: 0.081 
+Validation acc: 0.804 
+Validation loss: 1.064
+2023-04-06 13:07:35,796 - app - INFO - train_epoch:173 - Training epoch 9/10
+2023-04-06 13:09:23,225 - app - INFO - evaluate_epoch:236 - Evaluating epoch 9
+2023-04-06 13:09:28,928 - app - INFO - initalTrain:162 - 
+Training epoch 9/10 success. 
+Train acc: 0.976 
+Train loss: 0.076 
+Validation acc: 0.811 
+Validation loss: 1.061
+2023-04-06 13:09:28,929 - app - INFO - train_epoch:173 - Training epoch 10/10
+2023-04-06 13:11:16,370 - app - INFO - evaluate_epoch:236 - Evaluating epoch 10
+2023-04-06 13:11:22,077 - app - INFO - initalTrain:162 - 
+Training epoch 10/10 success. 
+Train acc: 0.978 
+Train loss: 0.066 
+Validation acc: 0.813 
+Validation loss: 1.099
+2023-04-06 14:20:08,587 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-06 14:20:32,360 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
+2023-04-06 14:20:32,365 - app - INFO - predict:30 - Using device: AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD
