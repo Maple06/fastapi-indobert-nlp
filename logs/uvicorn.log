@@ -611,3 +611,55 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 2023-04-11 08:20:32,796 - uvicorn.access - INFO - send:495 - 127.0.0.1:53033 - "POST /api/v1/ HTTP/1.1" 200
 2023-04-11 08:20:40,161 - uvicorn.access - INFO - send:495 - 127.0.0.1:53035 - "POST /api/v1/raw HTTP/1.1" 200
 2023-04-11 08:21:02,584 - uvicorn.error - INFO - shutdown:255 - Shutting down
+2023-04-11 08:26:37,523 - uvicorn.error - INFO - serve:75 - Started server process [13588]
+2023-04-11 08:26:37,523 - uvicorn.error - INFO - startup:47 - Waiting for application startup.
+2023-04-11 08:26:37,537 - uvicorn.error - INFO - startup:61 - Application startup complete.
+2023-04-11 08:27:21,263 - uvicorn.access - INFO - send:495 - 127.0.0.1:53093 - "POST /api/v1/raw HTTP/1.1" 500
+2023-04-11 08:27:21,263 - uvicorn.error - ERROR - run_asgi:424 - Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 420, in run_asgi
+    self.scope, self.receive, self.send
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\uvicorn\middleware\message_logger.py", line 86, in __call__
+    raise exc from None
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\uvicorn\middleware\message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\fastapi\applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\starlette\applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    raise exc
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\starlette\routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\starlette\routing.py", line 66, in app
+    response = await func(request)
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\fastapi\routing.py", line 238, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\fastapi\routing.py", line 163, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app\api\router.py", line 15, in NLPRouteMain
+    req_data = await data.json()
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\site-packages\starlette\requests.py", line 244, in json
+    self._json = json.loads(body)
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "c:\users\zhafran pratama\appdata\local\programs\python\python37\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 5 column 1 (char 268)
+2023-04-11 08:27:35,107 - uvicorn.access - INFO - send:495 - 127.0.0.1:53095 - "POST /api/v1/raw HTTP/1.1" 200
+2023-04-11 08:28:06,054 - uvicorn.access - INFO - send:495 - 127.0.0.1:53098 - "POST /api/v1/raw HTTP/1.1" 200
+2023-04-11 08:48:34,496 - uvicorn.access - INFO - send:495 - 127.0.0.1:53238 - "POST /api/v1/raw HTTP/1.1" 200

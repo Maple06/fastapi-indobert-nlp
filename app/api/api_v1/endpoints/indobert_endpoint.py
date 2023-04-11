@@ -12,8 +12,6 @@ class NLPEndpoint:
     def get_prediction(self, username, texts):
         try:
             nlpService = NLPService()
-            if isinstance(texts, str):
-                texts = json.loads(texts)
             result = nlpService.predict(username, texts)
             return result
         except json.decoder.JSONDecodeError:
