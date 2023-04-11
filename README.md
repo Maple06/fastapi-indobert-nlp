@@ -17,8 +17,8 @@ Send a post request to the api route "/api/v1" (localhost:2323/api/v1) that incl
 ### Input (RAW JSON)
 ```
 {
-    "username":"/<str/>"
-    "list_content":/<list/> eg. ["text1", "text2", "text3"]
+    "username":"\<str\>"
+    "list_content":\<list\> eg. ["text1", "text2", "text3"]
 }
 ```
 
