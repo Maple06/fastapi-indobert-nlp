@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "8ad763a0-632f-4590-a2e1-c7789d2b941e",
+		"_postman_id": "ef6d979b-eb9d-489b-bb30-4fce680cadd5",
 		"name": "IndoBERT API Collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,94 +11,28 @@
 				"method": "POST",
 				"header": [],
 				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "username",
-							"value": "mlndr.ale",
-							"type": "text"
-						},
-						{
-							"key": "list_content",
-							"value": "[\"Skincare ini bikin kulit kamu mulus!\", \"Segar setiap hari dengan lotion dari MapleCo\", \"Kamu bisa dapatkan promo beli 1 gratis 1 ketika kamu beli barang makeup dari MapleCo\", \"Si kecil jadi aktif sekarang ya\"]",
-							"type": "text"
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"mlndr.ale\",\r\n    \"list_content\": [\"Skincare ini bikin kulit kamu mulus!\", \"Segar setiap hari dengan lotion dari MapleCo\", \"Kamu bisa dapatkan promo beli 1 gratis 1 ketika kamu beli barang makeup dari MapleCo\", \"Si kecil jadi aktif sekarang ya\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
 						}
-					]
+					}
 				},
 				"url": {
-					"raw": "localhost:2323/api/v1",
+					"raw": "localhost:2323/api/v1/",
 					"host": [
 						"localhost"
 					],
 					"port": "2323",
 					"path": [
 						"api",
-						"v1"
+						"v1",
+						""
 					]
 				}
 			},
-			"response": {
-	    		"result": {
-					"username": "mlndr.ale",
-					"prediction": "Beauty",
-					"category": [
-						{
-							"Beauty": "73.97%"
-						},
-						{
-							"Parenting": "22.27%"
-						},
-						{
-							"Health": "1.34%"
-						},
-						{
-							"Reviewer": "0.41%"
-						},
-						{
-							"Fashion": "0.26%"
-						},
-						{
-							"Lifestyle": "0.24%"
-						},
-						{
-							"Food": "0.22%"
-						},
-						{
-							"Sport": "0.21%"
-						},
-						{
-							"Music": "0.15%"
-						},
-						{
-							"Politik": "0.13%"
-						},
-						{
-							"Gigs Worker": "0.12%"
-						},
-						{
-							"Technology": "0.11%"
-						},
-						{
-							"Traveling": "0.11%"
-						},
-						{
-							"Finance": "0.10%"
-						},
-						{
-							"Otomotif": "0.10%"
-						},
-						{
-							"Homedecor": "0.10%"
-						},
-						{
-							"Gamers": "0.10%"
-						},
-						{
-							"Kpop": "0.09%"
-						}
-					]
-				}
-		    }
+			"response": []
 		}
 	]
 }
