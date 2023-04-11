@@ -124,3 +124,4 @@ Validation loss: 1.102
 2023-04-11 08:28:05,817 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
 2023-04-11 08:48:34,255 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
 2023-04-11 08:48:34,259 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-11 08:49:50,575 - app - INFO - initalTrain:40 - API Started. Dataset exists.

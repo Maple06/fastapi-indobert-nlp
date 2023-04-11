@@ -9,17 +9,10 @@ routerv1 = APIRouter(
     }
 )
 
-@routerv1.post('/raw')
+@routerv1.post('/')
 async def NLPRouteMain(data : Request):
     nlp = NLPEndpoint()
     req_data = await data.json()
     result = nlp.get_prediction(req_data["username"], req_data["list_content"])
-
-    return result
-
-@routerv1.post('/')
-async def NLPRouteMain(username : str = Form(...), list_content : str = Form(...)):
-    nlp = NLPEndpoint()
-    result = nlp.get_prediction(username, list_content)
 
     return result

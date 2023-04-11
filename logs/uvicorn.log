@@ -663,3 +663,6 @@ json.decoder.JSONDecodeError: Extra data: line 5 column 1 (char 268)
 2023-04-11 08:27:35,107 - uvicorn.access - INFO - send:495 - 127.0.0.1:53095 - "POST /api/v1/raw HTTP/1.1" 200
 2023-04-11 08:28:06,054 - uvicorn.access - INFO - send:495 - 127.0.0.1:53098 - "POST /api/v1/raw HTTP/1.1" 200
 2023-04-11 08:48:34,496 - uvicorn.access - INFO - send:495 - 127.0.0.1:53238 - "POST /api/v1/raw HTTP/1.1" 200
+2023-04-11 08:49:52,870 - uvicorn.error - INFO - serve:75 - Started server process [3044]
+2023-04-11 08:49:52,870 - uvicorn.error - INFO - startup:47 - Waiting for application startup.
+2023-04-11 08:49:52,870 - uvicorn.error - INFO - startup:61 - Application startup complete.
