@@ -86,3 +86,34 @@ Validation acc: 0.814
 Validation loss: 1.102
 2023-04-10 10:18:23,800 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
 2023-04-10 10:18:24,146 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-11 07:53:19,828 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-11 07:56:23,204 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-11 07:57:20,171 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-11 07:58:03,941 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-11 08:02:13,205 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-11 08:04:22,030 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-11 08:08:10,187 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-11 08:08:15,936 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
+2023-04-11 08:08:19,932 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-11 08:12:05,504 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-11 08:12:23,291 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-11 08:13:10,486 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
+2023-04-11 08:13:12,975 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-11 08:14:12,977 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-11 08:14:43,794 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-11 08:15:06,860 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-11 08:15:24,749 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
+2023-04-11 08:15:27,278 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-11 08:16:16,714 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-11 08:18:08,338 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-11 08:19:56,956 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-11 08:20:03,781 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
+2023-04-11 08:20:06,305 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-11 08:20:15,358 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
+2023-04-11 08:20:15,363 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-11 08:20:19,246 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
+2023-04-11 08:20:19,256 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-11 08:20:32,563 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
+2023-04-11 08:20:32,575 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-11 08:20:39,915 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
+2023-04-11 08:20:39,918 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
