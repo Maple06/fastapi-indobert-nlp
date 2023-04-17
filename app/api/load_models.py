@@ -16,12 +16,12 @@ from ..core.logging import logger
 
 # Defining constants
 CWD = os.getcwd()
-CATEGORY_LIST = ['Lifestyle', 'Otomotif', 'Music', 'Beauty', 'Fashion', 'Traveling', 'Food', 'Finance', 'Parenting', 'Technology', 'Health', 'Gigs Worker', 'Homedecor', 'Gamers', 'Sport', 'Reviewer', 'Kpop', 'Politik']
+CATEGORY_LIST = ['Lifestyle', 'Otomotif', 'Music', 'Beauty', 'Fashion', 'Traveling', 'Food', 'Finance', 'Parenting', 'Technology', 'Health', 'Gigs Worker', 'Homedecor', 'Gamers', 'Sport', 'Reviewer', 'Kpop', 'Politik', 'Education']
 ARCHITECTURE = "indobenchmark/indobert-base-p1"
 PATH = f"{CWD}/ml-models"
 
 EPOCHS = 10
-BATCH_SIZE = 16
+BATCH_SIZE = 32
 
 defaultEmptyResult = {
                         "result": {
@@ -74,7 +74,7 @@ class NLPIndoBert:
         tokenizer = BertTokenizer.from_pretrained(ARCHITECTURE)
         tokens_train = tokenizer.batch_encode_plus(
             train_text.tolist(),
-            max_length = 100,
+            max_length = 50,
             padding='longest',
             truncation=True
         )
@@ -82,7 +82,7 @@ class NLPIndoBert:
         # Tokenize and encode sequences in the VALIDATION set
         tokens_val = tokenizer.batch_encode_plus(
             val_text.tolist(),
-            max_length = 100,
+            max_length = 50,
             padding='longest',
             truncation=True
         )
@@ -109,7 +109,7 @@ class NLPIndoBert:
         self.val_dataloader = DataLoader(val_data, sampler = val_sampler, batch_size=BATCH_SIZE)
 
         # Pass the pre-trained BERT to our define architecture
-        self.model = BertForSequenceClassification.from_pretrained(ARCHITECTURE, num_labels=18)
+        self.model = BertForSequenceClassification.from_pretrained(ARCHITECTURE, num_labels=19)
         
         # Push the model to GPU, if exist
         self.model = self.model.to(self.device)

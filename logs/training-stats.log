@@ -1,130 +1,27 @@
-2023-04-10 09:53:34,510 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-10 09:54:11,440 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-10 09:54:14,247 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
-2023-04-10 09:55:01,036 - app - INFO - initalTrain:43 - API Started. Training dataset...
-2023-04-10 09:55:01,124 - app - INFO - initalTrain:73 - Tokenizing and encoding sequences
-2023-04-10 09:55:09,462 - app - INFO - initalTrain:117 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
-2023-04-10 09:55:09,471 - app - INFO - train_epoch:174 - Training epoch 1/10
-2023-04-10 09:57:12,063 - app - INFO - evaluate_epoch:237 - Evaluating epoch 1
-2023-04-10 09:57:20,429 - app - INFO - initalTrain:163 - 
-Training epoch 1/10 success. 
-Train acc: 0.664 
-Train loss: 1.227 
-Validation acc: 0.775 
-Validation loss: 0.851
-2023-04-10 09:57:20,430 - app - INFO - train_epoch:174 - Training epoch 2/10
-2023-04-10 09:59:26,623 - app - INFO - evaluate_epoch:237 - Evaluating epoch 2
-2023-04-10 09:59:34,191 - app - INFO - initalTrain:163 - 
-Training epoch 2/10 success. 
-Train acc: 0.834 
-Train loss: 0.615 
-Validation acc: 0.802 
-Validation loss: 0.738
-2023-04-10 09:59:34,193 - app - INFO - train_epoch:174 - Training epoch 3/10
-2023-04-10 10:01:54,838 - app - INFO - evaluate_epoch:237 - Evaluating epoch 3
-2023-04-10 10:02:01,102 - app - INFO - initalTrain:163 - 
-Training epoch 3/10 success. 
-Train acc: 0.899 
-Train loss: 0.381 
-Validation acc: 0.797 
-Validation loss: 0.784
-2023-04-10 10:02:01,103 - app - INFO - train_epoch:174 - Training epoch 4/10
-2023-04-10 10:04:11,107 - app - INFO - evaluate_epoch:237 - Evaluating epoch 4
-2023-04-10 10:04:17,304 - app - INFO - initalTrain:163 - 
-Training epoch 4/10 success. 
-Train acc: 0.928 
-Train loss: 0.256 
-Validation acc: 0.799 
-Validation loss: 0.863
-2023-04-10 10:04:17,304 - app - INFO - train_epoch:174 - Training epoch 5/10
-2023-04-10 10:06:25,599 - app - INFO - evaluate_epoch:237 - Evaluating epoch 5
-2023-04-10 10:06:31,621 - app - INFO - initalTrain:163 - 
-Training epoch 5/10 success. 
-Train acc: 0.951 
-Train loss: 0.172 
-Validation acc: 0.805 
-Validation loss: 0.877
-2023-04-10 10:06:31,623 - app - INFO - train_epoch:174 - Training epoch 6/10
-2023-04-10 10:08:37,247 - app - INFO - evaluate_epoch:237 - Evaluating epoch 6
-2023-04-10 10:08:43,312 - app - INFO - initalTrain:163 - 
-Training epoch 6/10 success. 
-Train acc: 0.962 
-Train loss: 0.133 
-Validation acc: 0.805 
-Validation loss: 0.973
-2023-04-10 10:08:43,313 - app - INFO - train_epoch:174 - Training epoch 7/10
-2023-04-10 10:10:55,854 - app - INFO - evaluate_epoch:237 - Evaluating epoch 7
-2023-04-10 10:11:02,218 - app - INFO - initalTrain:163 - 
-Training epoch 7/10 success. 
-Train acc: 0.971 
-Train loss: 0.100 
-Validation acc: 0.811 
-Validation loss: 1.013
-2023-04-10 10:11:02,220 - app - INFO - train_epoch:174 - Training epoch 8/10
-2023-04-10 10:13:18,449 - app - INFO - evaluate_epoch:237 - Evaluating epoch 8
-2023-04-10 10:13:24,602 - app - INFO - initalTrain:163 - 
-Training epoch 8/10 success. 
-Train acc: 0.974 
-Train loss: 0.086 
-Validation acc: 0.808 
-Validation loss: 1.087
-2023-04-10 10:13:24,603 - app - INFO - train_epoch:174 - Training epoch 9/10
-2023-04-10 10:15:32,151 - app - INFO - evaluate_epoch:237 - Evaluating epoch 9
-2023-04-10 10:15:38,190 - app - INFO - initalTrain:163 - 
-Training epoch 9/10 success. 
-Train acc: 0.975 
-Train loss: 0.074 
-Validation acc: 0.802 
-Validation loss: 1.153
-2023-04-10 10:15:38,191 - app - INFO - train_epoch:174 - Training epoch 10/10
-2023-04-10 10:17:44,775 - app - INFO - evaluate_epoch:237 - Evaluating epoch 10
-2023-04-10 10:17:50,850 - app - INFO - initalTrain:163 - 
-Training epoch 10/10 success. 
-Train acc: 0.977 
-Train loss: 0.068 
-Validation acc: 0.814 
-Validation loss: 1.102
-2023-04-10 10:18:23,800 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-10 10:18:24,146 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
-2023-04-11 07:53:19,828 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 07:56:23,204 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 07:57:20,171 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 07:58:03,941 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 08:02:13,205 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 08:04:22,030 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 08:08:10,187 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 08:08:15,936 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-11 08:08:19,932 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
-2023-04-11 08:12:05,504 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 08:12:23,291 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 08:13:10,486 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-11 08:13:12,975 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
-2023-04-11 08:14:12,977 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 08:14:43,794 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 08:15:06,860 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 08:15:24,749 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-11 08:15:27,278 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
-2023-04-11 08:16:16,714 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 08:18:08,338 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 08:19:56,956 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 08:20:03,781 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-11 08:20:06,305 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
-2023-04-11 08:20:15,358 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-11 08:20:15,363 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
-2023-04-11 08:20:19,246 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-11 08:20:19,256 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
-2023-04-11 08:20:32,563 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-11 08:20:32,575 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
-2023-04-11 08:20:39,915 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-11 08:20:39,918 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
-2023-04-11 08:26:35,446 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 08:27:31,174 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-11 08:27:33,730 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
-2023-04-11 08:28:05,812 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-11 08:28:05,817 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
-2023-04-11 08:48:34,255 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-11 08:48:34,259 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
-2023-04-11 08:49:50,575 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 08:50:39,376 - app - INFO - initalTrain:40 - API Started. Dataset exists.
-2023-04-11 08:57:37,926 - app - INFO - predict:20 - API request received. Predicting mlndr.ale with 4 texts
-2023-04-11 08:57:40,640 - app - INFO - predict:28 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-17 13:04:31,214 - app - INFO - initalTrain:40 - API Started. Dataset exists.
+2023-04-17 13:04:59,364 - app - INFO - initalTrain:43 - API Started. Training dataset...
+2023-04-17 13:04:59,447 - app - INFO - initalTrain:73 - Tokenizing and encoding sequences
+2023-04-17 13:05:07,884 - app - INFO - initalTrain:117 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-17 13:05:07,895 - app - INFO - train_epoch:174 - Training epoch 1/10
+2023-04-17 13:08:06,439 - app - INFO - initalTrain:43 - API Started. Training dataset...
+2023-04-17 13:08:06,490 - app - INFO - initalTrain:73 - Tokenizing and encoding sequences
+2023-04-17 13:08:14,345 - app - INFO - initalTrain:117 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-17 13:08:14,345 - app - INFO - train_epoch:174 - Training epoch 1/10
+2023-04-17 13:08:33,668 - app - INFO - initalTrain:43 - API Started. Training dataset...
+2023-04-17 13:08:33,728 - app - INFO - initalTrain:73 - Tokenizing and encoding sequences
+2023-04-17 13:08:42,970 - app - INFO - initalTrain:117 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-17 13:08:42,978 - app - INFO - train_epoch:174 - Training epoch 1/10
+2023-04-17 13:09:02,743 - app - INFO - initalTrain:43 - API Started. Training dataset...
+2023-04-17 13:09:02,804 - app - INFO - initalTrain:73 - Tokenizing and encoding sequences
+2023-04-17 13:09:10,503 - app - INFO - initalTrain:43 - API Started. Training dataset...
+2023-04-17 13:09:10,555 - app - INFO - initalTrain:73 - Tokenizing and encoding sequences
+2023-04-17 13:09:17,534 - app - INFO - initalTrain:117 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-17 13:09:17,539 - app - INFO - train_epoch:174 - Training epoch 1/10
+2023-04-17 13:13:36,669 - app - INFO - initalTrain:43 - API Started. Training dataset...
+2023-04-17 13:13:36,727 - app - INFO - initalTrain:73 - Tokenizing and encoding sequences
+2023-04-17 13:13:43,620 - app - INFO - initalTrain:117 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-17 13:13:43,624 - app - INFO - train_epoch:174 - Training epoch 1/10
+2023-04-17 13:14:08,976 - app - INFO - initalTrain:43 - API Started. Training dataset...
+2023-04-17 13:14:09,038 - app - INFO - initalTrain:73 - Tokenizing and encoding sequences
+2023-04-17 13:14:16,263 - app - INFO - initalTrain:117 - Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+2023-04-17 13:14:16,279 - app - INFO - train_epoch:174 - Training epoch 1/10
