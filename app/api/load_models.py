@@ -16,7 +16,7 @@ from ..core.logging import logger
 
 # Defining constants
 CWD = os.getcwd()
-CATEGORY_LIST = ['Lifestyle', 'Otomotif', 'Music', 'Beauty', 'Fashion', 'Traveling', 'Food', 'Finance', 'Parenting', 'Technology', 'Health', 'Gigs Worker', 'Homedecor', 'Gamers', 'Sport', 'Reviewer', 'Kpop', 'Politik', 'Education']
+CATEGORY_LIST = ['Beauty', 'Education', 'Fashion', 'Finance', 'Food', 'Gamers', 'Gigs Worker', 'Health', 'Homedecor', 'Kpop', 'Lifestyle', 'Music', 'Otomotif', 'Parenting', 'Politik', 'Reviewer', 'Sport', 'Technology', 'Traveling']
 ARCHITECTURE = "indobenchmark/indobert-base-p1"
 PATH = f"{CWD}/ml-models"
 
@@ -53,27 +53,29 @@ class NLPIndoBert:
             df = pd.read_csv(f"{CWD}/data/dataset.csv")
             df = df.dropna()
         except:
-            logger.error("Dataset csv file have the wrong format. Make sure the csv file only have 2 columns of 'text' and 'label'")
+            logger.error("Dataset csv file have the wrong format.")
             return None
         
-        df['label'] = df['label'].replace(CATEGORY_LIST,range(len(CATEGORY_LIST)))
+        cols = df.columns
+        label_cols = list(cols[1:])
+        df['one_hot_labels'] = list(df[label_cols].values)
+        text = list(df['text'])
+        labels = list(df['one_hot_labels'])
 
         # Splitting train dataset into train and validation sets
-        train_text, temp_text, train_labels, temp_labels = train_test_split(df['text'], df['label'], 
+        train_text, temp_text, train_labels, temp_labels = train_test_split(text, labels, 
                                                                             random_state=2018, 
-                                                                            test_size=0.3, 
-                                                                            stratify=df['label'])
+                                                                            test_size=0.3)
 
         val_text, _, val_labels, _ = train_test_split(temp_text, temp_labels, 
                                                                         random_state=2018, 
-                                                                        test_size=0.5, 
-                                                                        stratify=temp_labels)
+                                                                        test_size=0.5)
         
         # Tokenize and encode sequences in the TRAINING set
         logger.info("Tokenizing and encoding sequences")
         tokenizer = BertTokenizer.from_pretrained(ARCHITECTURE)
         tokens_train = tokenizer.batch_encode_plus(
-            train_text.tolist(),
+            train_text,
             max_length = 50,
             padding='longest',
             truncation=True
@@ -81,7 +83,7 @@ class NLPIndoBert:
 
         # Tokenize and encode sequences in the VALIDATION set
         tokens_val = tokenizer.batch_encode_plus(
-            val_text.tolist(),
+            val_text,
             max_length = 50,
             padding='longest',
             truncation=True
@@ -90,11 +92,11 @@ class NLPIndoBert:
         # Convert lists to tensor
         train_seq = torch.tensor(tokens_train['input_ids'])
         train_mask = torch.tensor(tokens_train['attention_mask'])
-        train_y = torch.tensor(train_labels.tolist())
+        train_y = torch.tensor(train_labels)
 
         val_seq = torch.tensor(tokens_val['input_ids'])
         val_mask = torch.tensor(tokens_val['attention_mask'])
-        val_y = torch.tensor(val_labels.tolist())
+        val_y = torch.tensor(val_labels)
 
         # Wrap tensors
         train_data = TensorDataset(train_seq, train_mask, train_y)
@@ -120,19 +122,6 @@ class NLPIndoBert:
 
         # Defining optimizer
         self.optimizer = AdamW(self.model.parameters(), lr = 1e-5)
-
-        # Computing class weights
-        class_weights = compute_class_weight(
-                                        class_weight = "balanced",
-                                        classes = np.unique(train_labels),
-                                        y = train_labels                                                 
-                                    )
-        
-        # Converting list of class weights to a tensor
-        weights = torch.tensor(class_weights,dtype=torch.float)
-
-        # Push to GPU, if exist
-        weights = weights.to(self.device)
 
         # Set initial loss to infinite
         best_valid_loss = float('inf')
@@ -197,10 +186,10 @@ class NLPIndoBert:
             preds = self.model(sent_id, mask)
 
             # Define the loss function
-            cross_entropy  = nn.CrossEntropyLoss()
+            criterion  = nn.MultiLabelSoftMarginLoss()
 
             # Compute the loss between actual and predicted values
-            loss = cross_entropy(preds.logits, labels)
+            loss = criterion(preds.logits, labels)
 
             # Add on to the total loss
             total_loss = total_loss + loss.item()
@@ -218,7 +207,7 @@ class NLPIndoBert:
             total_preds.append(preds)
 
             # Calculate the accuracy for this batch
-            _, pred_labels = torch.max(preds.logits, dim=1)
+            _, pred_labels = torch.max(preds.logits , dim=0)
             accuracy = torch.sum(pred_labels == labels).item() / labels.size(0)
             total_accuracy += accuracy
 
@@ -261,17 +250,17 @@ class NLPIndoBert:
                 preds = self.model(sent_id, mask)
 
                 # Define the loss function
-                cross_entropy  = nn.CrossEntropyLoss()
+                criterion  = nn.MultiLabelSoftMarginLoss()
 
                 # compute the validation loss between actual and predicted values
-                loss = cross_entropy(preds.logits,labels)
+                loss = criterion(preds.logits,labels)
 
                 total_loss = total_loss + loss.item()
 
                 total_preds.append(preds)
 
             # calculate the accuracy for this batch
-            _, pred_labels = torch.max(preds.logits, dim=1)
+            _, pred_labels = torch.max(preds.logits, dim=0)
             accuracy = torch.sum(pred_labels == labels).item() / labels.size(0)
             total_accuracy += accuracy
 

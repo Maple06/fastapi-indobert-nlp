@@ -9,7 +9,7 @@ from ...load_models import trainDataset, defaultEmptyResult, loadTokenizer, load
 
 CWD = os.getcwd()
 
-CATEGORY_LIST = ['Lifestyle', 'Otomotif', 'Music', 'Beauty', 'Fashion', 'Traveling', 'Food', 'Finance', 'Parenting', 'Technology', 'Health', 'Gigs Worker', 'Homedecor', 'Gamers', 'Sport', 'Reviewer', 'Kpop', 'Politik', 'Education']
+CATEGORY_LIST = ['Beauty', 'Education', 'Fashion', 'Finance', 'Food', 'Gamers', 'Gigs Worker', 'Health', 'Homedecor', 'Kpop', 'Lifestyle', 'Music', 'Otomotif', 'Parenting', 'Politik', 'Reviewer', 'Sport', 'Technology', 'Traveling']
 
 # Module specific business logic (will be use for endpoints)
 class NLPService:
