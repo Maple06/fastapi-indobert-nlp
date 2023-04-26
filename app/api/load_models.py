@@ -163,7 +163,7 @@ class NLPIndoBert:
         logger.info(f"Training epoch {epoch_num+1}/{EPOCHS}")
         self.model.train()
 
-        total_loss, total_accuracy = 0, 0
+        total_loss, total_accuracy, total_labels = 0, 0, 0
         
         # empty list to save model predictions
         total_preds=[]
@@ -208,12 +208,17 @@ class NLPIndoBert:
 
             # Calculate the accuracy for this batch
             _, pred_labels = torch.max(preds.logits , dim=0)
-            accuracy = torch.sum(pred_labels == labels).item() / labels.size(0)
+            accuracy = torch.sum(pred_labels == labels)
+            accuracy = accuracy.cpu()
+            accuracy = np.round(accuracy)
             total_accuracy += accuracy
+            labels = np.round(labels.size(0))
+            total_labels += labels
+
 
         # Compute the training accuracy and loss of the epoch
         avg_loss = total_loss / len(self.train_dataloader)
-        avg_accuracy = total_accuracy / len(self.train_dataloader)
+        avg_accuracy = total_accuracy / total_labels
         
         # Predictions are in the form of (no. of batches, size of batch, no. of classes).
         # Reshape the predictions in form of (number of samples, no. of classes)
@@ -228,7 +233,7 @@ class NLPIndoBert:
         # Deactivate dropout layers
         self.model.eval()
 
-        total_loss, total_accuracy = 0, 0
+        total_loss, total_accuracy, total_labels = 0, 0, 0
         
         # Empty list to save the model predictions
         total_preds = []
@@ -261,12 +266,17 @@ class NLPIndoBert:
 
             # calculate the accuracy for this batch
             _, pred_labels = torch.max(preds.logits, dim=0)
-            accuracy = torch.sum(pred_labels == labels).item() / labels.size(0)
+            accuracy = torch.sum(pred_labels == labels)
+            accuracy = accuracy.cpu()
+            accuracy = np.round(accuracy)
             total_accuracy += accuracy
+            labels = np.round(labels.size(0))
+            total_labels += labels
+
 
         # Compute the validation accuracy and loss of the epoch
         avg_loss = total_loss / len(self.val_dataloader)
-        avg_accuracy = total_accuracy / len(self.val_dataloader)
+        avg_accuracy = total_accuracy / total_labels
 
         # Reshape the predictions in form of (number of samples, no. of classes)
         total_preds  = np.concatenate([total_preds], axis=0)
